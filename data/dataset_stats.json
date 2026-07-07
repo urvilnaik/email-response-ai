@@ -1,0 +1,34 @@
+{
+  "seed_count": 25,
+  "dataset_count": 60,
+  "holdout_count": 15,
+  "negative_count": 30,
+  "sanity_count": 10,
+  "dataset_by_category": {
+    "billing": 11,
+    "scheduling": 8,
+    "sales": 9,
+    "support": 10,
+    "complaints": 9,
+    "feature_request": 3,
+    "account_access": 7,
+    "onboarding": 3
+  },
+  "dataset_by_quality": {
+    "clean": 28,
+    "messy": 32
+  },
+  "holdout_by_category": {
+    "account_access": 2,
+    "onboarding": 3,
+    "support": 2,
+    "complaints": 3,
+    "scheduling": 1,
+    "feature_request": 3,
+    "billing": 1
+  },
+  "negative_by_failure_mode": {
+    "ignores_intent": 15,
+    "missing_actions": 15
+  }
+}
