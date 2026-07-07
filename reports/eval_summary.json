@@ -1,0 +1,16 @@
+{
+  "holdout_count": 15,
+  "positive_mean": 0.2881,
+  "negative_mean": 0.286,
+  "separation_gap": 0.002,
+  "rank_accuracy": 0.4667,
+  "adjusted_score": 0.0009,
+  "quality_breakdown": {
+    "messy": 0.298,
+    "clean": 0.2731
+  },
+  "failure_mode_breakdown": {
+    "ignores_intent": 0.2843,
+    "missing_actions": 0.2877
+  }
+}

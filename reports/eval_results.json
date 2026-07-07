@@ -1,0 +1,901 @@
+[
+  {
+    "email_id": "holdout_001",
+    "metadata": {
+      "category": "account_access",
+      "quality": "messy",
+      "intent": [
+        "password_reset"
+      ],
+      "actions": [
+        "send_password_reset",
+        "check_spam",
+        "offer_manual_verification"
+      ]
+    },
+    "generated_reply": "Thank you for reaching out. I understand your concern and am looking into this for you. I'll follow up with next steps shortly. Please let me know if you have any additional questions.",
+    "gold_reply": "Hi,\n\nI've sent a new password reset link to your registered email (check spam/junk). The link expires in 24 hours. If you still don't receive it, reply with your account email and we'll verify manually.\n\nBest,\nAccount Support",
+    "scores": {
+      "semantic_similarity": 0.1116,
+      "similarity_zone": "low",
+      "action_coverage": 0.0,
+      "judge": {
+        "intent_alignment": {
+          "score": 2,
+          "rationale": "Mock: based on lexical overlap with gold reply."
+        },
+        "tone_consistency": {
+          "score": 4,
+          "rationale": "Mock: professional tone assumed."
+        },
+        "hallucination": {
+          "score": 4,
+          "rationale": "Mock: no obvious fabrications detected."
+        },
+        "completeness": {
+          "score": 1,
+          "rationale": "Mock: action coverage 0%."
+        },
+        "subscore": 0.425
+      },
+      "composite": 0.2561
+    },
+    "negative_scores": [
+      {
+        "id": "neg_holdout_001a",
+        "failure_mode": "ignores_intent",
+        "composite": 0.2851
+      },
+      {
+        "id": "neg_holdout_001b",
+        "failure_mode": "missing_actions",
+        "composite": 0.295
+      }
+    ],
+    "beats_all_negatives": false,
+    "retrieved_examples": [
+      "var_seed_011_20",
+      "seed_011",
+      "var_seed_010_19"
+    ]
+  },
+  {
+    "email_id": "holdout_002",
+    "metadata": {
+      "category": "onboarding",
+      "quality": "messy",
+      "intent": [
+        "welcome_email_missing"
+      ],
+      "actions": [
+        "resend_welcome_email",
+        "check_spam"
+      ]
+    },
+    "generated_reply": "Thank you for reaching out. I understand your concern and am looking into this for you. I'll follow up with next steps shortly. Please let me know if you have any additional questions.",
+    "gold_reply": "Hi,\n\nSorry you didn't receive your welcome email! I've just resent it \u2014 check spam/junk too. It has setup steps and a link to book a free onboarding call. Reply if you still don't see it.\n\nBest,\nOnboarding Team",
+    "scores": {
+      "semantic_similarity": 0.3725,
+      "similarity_zone": "low",
+      "action_coverage": 0.0,
+      "judge": {
+        "intent_alignment": {
+          "score": 2,
+          "rationale": "Mock: based on lexical overlap with gold reply."
+        },
+        "tone_consistency": {
+          "score": 4,
+          "rationale": "Mock: professional tone assumed."
+        },
+        "hallucination": {
+          "score": 4,
+          "rationale": "Mock: no obvious fabrications detected."
+        },
+        "completeness": {
+          "score": 1,
+          "rationale": "Mock: action coverage 0%."
+        },
+        "subscore": 0.425
+      },
+      "composite": 0.3083
+    },
+    "negative_scores": [
+      {
+        "id": "neg_holdout_002a",
+        "failure_mode": "ignores_intent",
+        "composite": 0.3151
+      },
+      {
+        "id": "neg_holdout_002b",
+        "failure_mode": "missing_actions",
+        "composite": 0.3029
+      }
+    ],
+    "beats_all_negatives": false,
+    "retrieved_examples": [
+      "var_seed_019_37",
+      "var_seed_019_36",
+      "seed_018"
+    ]
+  },
+  {
+    "email_id": "holdout_003",
+    "metadata": {
+      "category": "support",
+      "quality": "messy",
+      "intent": [
+        "api_key_rotation"
+      ],
+      "actions": [
+        "provide_rotation_steps",
+        "advise_revoke_old_key"
+      ]
+    },
+    "generated_reply": "Thank you for reaching out. I understand your concern and am looking into this for you. I'll follow up with next steps shortly. Please let me know if you have any additional questions.",
+    "gold_reply": "Hi,\n\nFor security, please rotate your API key immediately: go to Dashboard > Settings > API Keys > Regenerate. The old key will be revoked within 5 minutes. Also review your repo history and remove any exposed credentials.\n\nBest,\nSecurity Team",
+    "scores": {
+      "semantic_similarity": 0.1436,
+      "similarity_zone": "low",
+      "action_coverage": 0.5,
+      "judge": {
+        "intent_alignment": {
+          "score": 2,
+          "rationale": "Mock: based on lexical overlap with gold reply."
+        },
+        "tone_consistency": {
+          "score": 4,
+          "rationale": "Mock: professional tone assumed."
+        },
+        "hallucination": {
+          "score": 4,
+          "rationale": "Mock: no obvious fabrications detected."
+        },
+        "completeness": {
+          "score": 3,
+          "rationale": "Mock: action coverage 50%."
+        },
+        "subscore": 0.525
+      },
+      "composite": 0.4
+    },
+    "negative_scores": [
+      {
+        "id": "neg_holdout_003a",
+        "failure_mode": "ignores_intent",
+        "composite": 0.2524
+      },
+      {
+        "id": "neg_holdout_003b",
+        "failure_mode": "missing_actions",
+        "composite": 0.2897
+      }
+    ],
+    "beats_all_negatives": true,
+    "retrieved_examples": [
+      "seed_006",
+      "var_seed_006_10",
+      "var_seed_010_19"
+    ]
+  },
+  {
+    "email_id": "holdout_004",
+    "metadata": {
+      "category": "complaints",
+      "quality": "clean",
+      "intent": [
+        "damaged_product",
+        "replacement_request"
+      ],
+      "actions": [
+        "arrange_replacement",
+        "no_return_needed",
+        "timeline_5_7_days"
+      ]
+    },
+    "generated_reply": "Thank you for reaching out. I understand your concern and am looking into this for you. I'll follow up with next steps shortly. Please let me know if you have any additional questions.",
+    "gold_reply": "Hi,\n\nI'm sorry your laptop stand arrived damaged. I've arranged a replacement shipment \u2014 no need to return the damaged item. The new unit should arrive within 5-7 business days. Please reply with a photo if you'd like us to file a carrier claim.\n\nBest,\nCustomer Care",
+    "scores": {
+      "semantic_similarity": 0.0919,
+      "similarity_zone": "low",
+      "action_coverage": 0.0,
+      "judge": {
+        "intent_alignment": {
+          "score": 2,
+          "rationale": "Mock: based on lexical overlap with gold reply."
+        },
+        "tone_consistency": {
+          "score": 4,
+          "rationale": "Mock: professional tone assumed."
+        },
+        "hallucination": {
+          "score": 4,
+          "rationale": "Mock: no obvious fabrications detected."
+        },
+        "completeness": {
+          "score": 1,
+          "rationale": "Mock: action coverage 0%."
+        },
+        "subscore": 0.425
+      },
+      "composite": 0.2521
+    },
+    "negative_scores": [
+      {
+        "id": "neg_holdout_004a",
+        "failure_mode": "ignores_intent",
+        "composite": 0.2617
+      },
+      {
+        "id": "neg_holdout_004b",
+        "failure_mode": "missing_actions",
+        "composite": 0.298
+      }
+    ],
+    "beats_all_negatives": false,
+    "retrieved_examples": [
+      "var_seed_009_17",
+      "var_seed_009_16",
+      "var_seed_022_43"
+    ]
+  },
+  {
+    "email_id": "holdout_005",
+    "metadata": {
+      "category": "complaints",
+      "quality": "messy",
+      "intent": [
+        "shipping_delay",
+        "complaint"
+      ],
+      "actions": [
+        "escalate_shipping",
+        "send_replacement",
+        "offer_credit_20_percent",
+        "followup_24h"
+      ]
+    },
+    "generated_reply": "Thank you for reaching out. I understand your concern and am looking into this for you. I'll follow up with next steps shortly. Please let me know if you have any additional questions.",
+    "gold_reply": "Hi,\n\nI completely understand your frustration \u2014 waiting two weeks is not acceptable. I've escalated with our carrier and arranged a free replacement shipment arriving in 3-5 business days. You'll also get 20% off your next order. I'll update you within 24 hours.\n\nSincerely,\nCustomer Care",
+    "scores": {
+      "semantic_similarity": 0.2409,
+      "similarity_zone": "low",
+      "action_coverage": 0.0,
+      "judge": {
+        "intent_alignment": {
+          "score": 2,
+          "rationale": "Mock: based on lexical overlap with gold reply."
+        },
+        "tone_consistency": {
+          "score": 4,
+          "rationale": "Mock: professional tone assumed."
+        },
+        "hallucination": {
+          "score": 4,
+          "rationale": "Mock: no obvious fabrications detected."
+        },
+        "completeness": {
+          "score": 1,
+          "rationale": "Mock: action coverage 0%."
+        },
+        "subscore": 0.425
+      },
+      "composite": 0.2819
+    },
+    "negative_scores": [
+      {
+        "id": "neg_holdout_005a",
+        "failure_mode": "ignores_intent",
+        "composite": 0.3013
+      },
+      {
+        "id": "neg_holdout_005b",
+        "failure_mode": "missing_actions",
+        "composite": 0.3095
+      }
+    ],
+    "beats_all_negatives": false,
+    "retrieved_examples": [
+      "var_seed_008_15",
+      "var_seed_007_13",
+      "var_seed_007_12"
+    ]
+  },
+  {
+    "email_id": "holdout_006",
+    "metadata": {
+      "category": "onboarding",
+      "quality": "clean",
+      "intent": [
+        "welcome_email_missing"
+      ],
+      "actions": [
+        "resend_welcome_email",
+        "check_spam",
+        "offer_onboarding_call"
+      ]
+    },
+    "generated_reply": "Thank you for reaching out. I understand your concern and am looking into this for you. I'll follow up with next steps shortly. Please let me know if you have any additional questions.",
+    "gold_reply": "Hi,\n\nWelcome aboard! I've resent the welcome email to newuser@company.org \u2014 please check your spam folder. It includes your setup guide and a link to schedule a free onboarding call. Let us know if you need anything else!\n\nBest,\nOnboarding Team",
+    "scores": {
+      "semantic_similarity": 0.4083,
+      "similarity_zone": "low",
+      "action_coverage": 0.0,
+      "judge": {
+        "intent_alignment": {
+          "score": 2,
+          "rationale": "Mock: based on lexical overlap with gold reply."
+        },
+        "tone_consistency": {
+          "score": 4,
+          "rationale": "Mock: professional tone assumed."
+        },
+        "hallucination": {
+          "score": 4,
+          "rationale": "Mock: no obvious fabrications detected."
+        },
+        "completeness": {
+          "score": 1,
+          "rationale": "Mock: action coverage 0%."
+        },
+        "subscore": 0.425
+      },
+      "composite": 0.3154
+    },
+    "negative_scores": [
+      {
+        "id": "neg_holdout_006a",
+        "failure_mode": "ignores_intent",
+        "composite": 0.3129
+      },
+      {
+        "id": "neg_holdout_006b",
+        "failure_mode": "missing_actions",
+        "composite": 0.2991
+      }
+    ],
+    "beats_all_negatives": true,
+    "retrieved_examples": [
+      "seed_018",
+      "var_seed_019_37",
+      "var_seed_019_36"
+    ]
+  },
+  {
+    "email_id": "holdout_007",
+    "metadata": {
+      "category": "scheduling",
+      "quality": "messy",
+      "intent": [
+        "meeting_reschedule"
+      ],
+      "actions": [
+        "confirm_new_time",
+        "send_updated_invite"
+      ]
+    },
+    "generated_reply": "Thank you for reaching out. I understand your concern and am looking into this for you. I'll follow up with next steps shortly. Please let me know if you have any additional questions.",
+    "gold_reply": "Hi,\n\nNo problem \u2014 I've moved today's 3 PM call to tomorrow at 3 PM. Updated invite sent. Let us know if you need a different time.\n\nBest,\nSales Team",
+    "scores": {
+      "semantic_similarity": 0.2953,
+      "similarity_zone": "low",
+      "action_coverage": 0.0,
+      "judge": {
+        "intent_alignment": {
+          "score": 2,
+          "rationale": "Mock: based on lexical overlap with gold reply."
+        },
+        "tone_consistency": {
+          "score": 4,
+          "rationale": "Mock: professional tone assumed."
+        },
+        "hallucination": {
+          "score": 4,
+          "rationale": "Mock: no obvious fabrications detected."
+        },
+        "completeness": {
+          "score": 1,
+          "rationale": "Mock: action coverage 0%."
+        },
+        "subscore": 0.425
+      },
+      "composite": 0.2928
+    },
+    "negative_scores": [
+      {
+        "id": "neg_holdout_007a",
+        "failure_mode": "ignores_intent",
+        "composite": 0.3227
+      },
+      {
+        "id": "neg_holdout_007b",
+        "failure_mode": "missing_actions",
+        "composite": 0.2859
+      }
+    ],
+    "beats_all_negatives": false,
+    "retrieved_examples": [
+      "var_seed_024_47",
+      "seed_024",
+      "var_seed_012_23"
+    ]
+  },
+  {
+    "email_id": "holdout_008",
+    "metadata": {
+      "category": "onboarding",
+      "quality": "messy",
+      "intent": [
+        "welcome_email_missing"
+      ],
+      "actions": [
+        "resend_welcome_email",
+        "check_spam",
+        "offer_onboarding_call"
+      ]
+    },
+    "generated_reply": "Thank you for reaching out. I understand your concern and am looking into this for you. I'll follow up with next steps shortly. Please let me know if you have any additional questions.",
+    "gold_reply": "Hi,\n\nWelcome aboard! I've resent the welcome email to newuser@company.org \u2014 please check your spam folder. It includes your setup guide and a link to schedule a free onboarding call. Let us know if you need anything else!\n\nBest,\nOnboarding Team",
+    "scores": {
+      "semantic_similarity": 0.4083,
+      "similarity_zone": "low",
+      "action_coverage": 0.0,
+      "judge": {
+        "intent_alignment": {
+          "score": 2,
+          "rationale": "Mock: based on lexical overlap with gold reply."
+        },
+        "tone_consistency": {
+          "score": 4,
+          "rationale": "Mock: professional tone assumed."
+        },
+        "hallucination": {
+          "score": 4,
+          "rationale": "Mock: no obvious fabrications detected."
+        },
+        "completeness": {
+          "score": 1,
+          "rationale": "Mock: action coverage 0%."
+        },
+        "subscore": 0.425
+      },
+      "composite": 0.3154
+    },
+    "negative_scores": [
+      {
+        "id": "neg_holdout_008a",
+        "failure_mode": "ignores_intent",
+        "composite": 0.3129
+      },
+      {
+        "id": "neg_holdout_008b",
+        "failure_mode": "missing_actions",
+        "composite": 0.2991
+      }
+    ],
+    "beats_all_negatives": true,
+    "retrieved_examples": [
+      "seed_018",
+      "var_seed_019_37",
+      "var_seed_019_36"
+    ]
+  },
+  {
+    "email_id": "holdout_009",
+    "metadata": {
+      "category": "account_access",
+      "quality": "clean",
+      "intent": [
+        "account_lockout"
+      ],
+      "actions": [
+        "unlock_account",
+        "send_password_reset"
+      ]
+    },
+    "generated_reply": "Thank you for reaching out. I understand your concern and am looking into this for you. I'll follow up with next steps shortly. Please let me know if you have any additional questions.",
+    "gold_reply": "Hi,\n\nI've unlocked your account. Please reset your password using the link I sent to your registered email. For future lockouts, use 'Forgot Password' on the login page or contact us before the 5-attempt limit.\n\nGood luck with your presentation!\n\nBest,\nAccount Support",
+    "scores": {
+      "semantic_similarity": 0.2607,
+      "similarity_zone": "low",
+      "action_coverage": 0.0,
+      "judge": {
+        "intent_alignment": {
+          "score": 2,
+          "rationale": "Mock: based on lexical overlap with gold reply."
+        },
+        "tone_consistency": {
+          "score": 4,
+          "rationale": "Mock: professional tone assumed."
+        },
+        "hallucination": {
+          "score": 4,
+          "rationale": "Mock: no obvious fabrications detected."
+        },
+        "completeness": {
+          "score": 1,
+          "rationale": "Mock: action coverage 0%."
+        },
+        "subscore": 0.425
+      },
+      "composite": 0.2859
+    },
+    "negative_scores": [
+      {
+        "id": "neg_holdout_009a",
+        "failure_mode": "ignores_intent",
+        "composite": 0.285
+      },
+      {
+        "id": "neg_holdout_009b",
+        "failure_mode": "missing_actions",
+        "composite": 0.2917
+      }
+    ],
+    "beats_all_negatives": false,
+    "retrieved_examples": [
+      "seed_010",
+      "var_seed_010_19",
+      "var_seed_011_20"
+    ]
+  },
+  {
+    "email_id": "holdout_010",
+    "metadata": {
+      "category": "complaints",
+      "quality": "messy",
+      "intent": [
+        "shipping_delay",
+        "complaint"
+      ],
+      "actions": [
+        "escalate_shipping",
+        "send_replacement",
+        "offer_credit_20_percent",
+        "followup_24h"
+      ]
+    },
+    "generated_reply": "Thank you for reaching out. I understand your concern and am looking into this for you. I'll follow up with next steps shortly. Please let me know if you have any additional questions.",
+    "gold_reply": "Hi,\n\nI completely understand your frustration \u2014 waiting two weeks is not acceptable. I've escalated with our carrier and arranged a free replacement shipment arriving in 3-5 business days. You'll also get 20% off your next order. I'll update you within 24 hours.\n\nSincerely,\nCustomer Care",
+    "scores": {
+      "semantic_similarity": 0.2409,
+      "similarity_zone": "low",
+      "action_coverage": 0.0,
+      "judge": {
+        "intent_alignment": {
+          "score": 2,
+          "rationale": "Mock: based on lexical overlap with gold reply."
+        },
+        "tone_consistency": {
+          "score": 4,
+          "rationale": "Mock: professional tone assumed."
+        },
+        "hallucination": {
+          "score": 4,
+          "rationale": "Mock: no obvious fabrications detected."
+        },
+        "completeness": {
+          "score": 1,
+          "rationale": "Mock: action coverage 0%."
+        },
+        "subscore": 0.425
+      },
+      "composite": 0.2819
+    },
+    "negative_scores": [
+      {
+        "id": "neg_holdout_010a",
+        "failure_mode": "ignores_intent",
+        "composite": 0.3013
+      },
+      {
+        "id": "neg_holdout_010b",
+        "failure_mode": "missing_actions",
+        "composite": 0.3095
+      }
+    ],
+    "beats_all_negatives": false,
+    "retrieved_examples": [
+      "var_seed_008_15",
+      "var_seed_007_13",
+      "var_seed_007_12"
+    ]
+  },
+  {
+    "email_id": "holdout_011",
+    "metadata": {
+      "category": "feature_request",
+      "quality": "clean",
+      "intent": [
+        "feature_request"
+      ],
+      "actions": [
+        "acknowledge_request",
+        "share_roadmap_timeline",
+        "add_to_feature_votes"
+      ]
+    },
+    "generated_reply": "Thank you for reaching out. I understand your concern and am looking into this for you. I'll follow up with next steps shortly. Please let me know if you have any additional questions.",
+    "gold_reply": "Hi,\n\nThank you for the feedback! Dark mode for iOS is on our Q3 roadmap and targeted for release in August. I've added your vote to the feature request. We'll notify you when it's available.\n\nBest,\nProduct Team",
+    "scores": {
+      "semantic_similarity": 0.1584,
+      "similarity_zone": "low",
+      "action_coverage": 0.0,
+      "judge": {
+        "intent_alignment": {
+          "score": 2,
+          "rationale": "Mock: based on lexical overlap with gold reply."
+        },
+        "tone_consistency": {
+          "score": 4,
+          "rationale": "Mock: professional tone assumed."
+        },
+        "hallucination": {
+          "score": 4,
+          "rationale": "Mock: no obvious fabrications detected."
+        },
+        "completeness": {
+          "score": 1,
+          "rationale": "Mock: action coverage 0%."
+        },
+        "subscore": 0.425
+      },
+      "composite": 0.2654
+    },
+    "negative_scores": [
+      {
+        "id": "neg_holdout_011a",
+        "failure_mode": "ignores_intent",
+        "composite": 0.2615
+      },
+      {
+        "id": "neg_holdout_011b",
+        "failure_mode": "missing_actions",
+        "composite": 0.2592
+      }
+    ],
+    "beats_all_negatives": true,
+    "retrieved_examples": [
+      "var_seed_016_31",
+      "var_seed_017_33",
+      "seed_017"
+    ]
+  },
+  {
+    "email_id": "holdout_012",
+    "metadata": {
+      "category": "support",
+      "quality": "clean",
+      "intent": [
+        "integration_issue"
+      ],
+      "actions": [
+        "diagnose_token_expiry",
+        "reauthorize_integration",
+        "recommend_reconnect"
+      ]
+    },
+    "generated_reply": "Thank you for reaching out. I understand your concern and am looking into this for you. I'll follow up with next steps shortly. Please let me know if you have any additional questions.",
+    "gold_reply": "Hi,\n\nI checked your Slack integration and found the webhook token expired. I've re-authorized it on our end \u2014 please disconnect and reconnect in Settings > Integrations > Slack. Notifications should resume within 15 minutes. Let me know if issues persist.\n\nBest,\nTechnical Support",
+    "scores": {
+      "semantic_similarity": 0.1036,
+      "similarity_zone": "low",
+      "action_coverage": 0.0,
+      "judge": {
+        "intent_alignment": {
+          "score": 2,
+          "rationale": "Mock: based on lexical overlap with gold reply."
+        },
+        "tone_consistency": {
+          "score": 4,
+          "rationale": "Mock: professional tone assumed."
+        },
+        "hallucination": {
+          "score": 4,
+          "rationale": "Mock: no obvious fabrications detected."
+        },
+        "completeness": {
+          "score": 1,
+          "rationale": "Mock: action coverage 0%."
+        },
+        "subscore": 0.425
+      },
+      "composite": 0.2545
+    },
+    "negative_scores": [
+      {
+        "id": "neg_holdout_012a",
+        "failure_mode": "ignores_intent",
+        "composite": 0.2757
+      },
+      {
+        "id": "neg_holdout_012b",
+        "failure_mode": "missing_actions",
+        "composite": 0.2838
+      }
+    ],
+    "beats_all_negatives": false,
+    "retrieved_examples": [
+      "seed_021",
+      "var_seed_021_41",
+      "var_seed_008_15"
+    ]
+  },
+  {
+    "email_id": "holdout_013",
+    "metadata": {
+      "category": "feature_request",
+      "quality": "messy",
+      "intent": [
+        "feature_request"
+      ],
+      "actions": [
+        "acknowledge_request",
+        "share_roadmap_timeline"
+      ]
+    },
+    "generated_reply": "Thank you for reaching out. I understand your concern and am looking into this for you. I'll follow up with next steps shortly. Please let me know if you have any additional questions.",
+    "gold_reply": "Hi,\n\nGreat suggestion! Dark mode for the iOS app is planned for Q3 (August). I've logged your request. We'll email you when it launches.\n\nBest,\nProduct Team",
+    "scores": {
+      "semantic_similarity": 0.2087,
+      "similarity_zone": "low",
+      "action_coverage": 0.0,
+      "judge": {
+        "intent_alignment": {
+          "score": 2,
+          "rationale": "Mock: based on lexical overlap with gold reply."
+        },
+        "tone_consistency": {
+          "score": 4,
+          "rationale": "Mock: professional tone assumed."
+        },
+        "hallucination": {
+          "score": 4,
+          "rationale": "Mock: no obvious fabrications detected."
+        },
+        "completeness": {
+          "score": 1,
+          "rationale": "Mock: action coverage 0%."
+        },
+        "subscore": 0.425
+      },
+      "composite": 0.2755
+    },
+    "negative_scores": [
+      {
+        "id": "neg_holdout_013a",
+        "failure_mode": "ignores_intent",
+        "composite": 0.2679
+      },
+      {
+        "id": "neg_holdout_013b",
+        "failure_mode": "missing_actions",
+        "composite": 0.2696
+      }
+    ],
+    "beats_all_negatives": true,
+    "retrieved_examples": [
+      "var_seed_017_33",
+      "seed_017",
+      "var_seed_016_31"
+    ]
+  },
+  {
+    "email_id": "holdout_014",
+    "metadata": {
+      "category": "billing",
+      "quality": "messy",
+      "intent": [
+        "invoice_inquiry"
+      ],
+      "actions": [
+        "explain_line_item",
+        "offer_addon_removal"
+      ]
+    },
+    "generated_reply": "Thank you for reaching out. I understand your concern and am looking into this for you. I'll follow up with next steps shortly. Please let me know if you have any additional questions.",
+    "gold_reply": "Hi Alex,\n\nThe $29 charge reflects your Pro plan ($19) plus a one-time add-on for extra storage ($10) activated on March 3. I've attached a detailed breakdown. Let me know if you'd like to remove the add-on.\n\nBest,\nBilling Team",
+    "scores": {
+      "semantic_similarity": 0.1823,
+      "similarity_zone": "low",
+      "action_coverage": 0.0,
+      "judge": {
+        "intent_alignment": {
+          "score": 2,
+          "rationale": "Mock: based on lexical overlap with gold reply."
+        },
+        "tone_consistency": {
+          "score": 4,
+          "rationale": "Mock: professional tone assumed."
+        },
+        "hallucination": {
+          "score": 4,
+          "rationale": "Mock: no obvious fabrications detected."
+        },
+        "completeness": {
+          "score": 1,
+          "rationale": "Mock: action coverage 0%."
+        },
+        "subscore": 0.425
+      },
+      "composite": 0.2702
+    },
+    "negative_scores": [
+      {
+        "id": "neg_holdout_014a",
+        "failure_mode": "ignores_intent",
+        "composite": 0.2479
+      },
+      {
+        "id": "neg_holdout_014b",
+        "failure_mode": "missing_actions",
+        "composite": 0.2637
+      }
+    ],
+    "beats_all_negatives": true,
+    "retrieved_examples": [
+      "seed_003",
+      "var_seed_003_04",
+      "seed_020"
+    ]
+  },
+  {
+    "email_id": "holdout_015",
+    "metadata": {
+      "category": "feature_request",
+      "quality": "clean",
+      "intent": [
+        "feature_request"
+      ],
+      "actions": [
+        "acknowledge_request",
+        "share_roadmap_timeline",
+        "add_to_feature_votes"
+      ]
+    },
+    "generated_reply": "Thank you for reaching out. I understand your concern and am looking into this for you. I'll follow up with next steps shortly. Please let me know if you have any additional questions.",
+    "gold_reply": "Hi,\n\nThank you for the feedback! Dark mode for iOS is on our Q3 roadmap and targeted for release in August. I've added your vote to the feature request. We'll notify you when it's available.\n\nBest,\nProduct Team",
+    "scores": {
+      "semantic_similarity": 0.1584,
+      "similarity_zone": "low",
+      "action_coverage": 0.0,
+      "judge": {
+        "intent_alignment": {
+          "score": 2,
+          "rationale": "Mock: based on lexical overlap with gold reply."
+        },
+        "tone_consistency": {
+          "score": 4,
+          "rationale": "Mock: professional tone assumed."
+        },
+        "hallucination": {
+          "score": 4,
+          "rationale": "Mock: no obvious fabrications detected."
+        },
+        "completeness": {
+          "score": 1,
+          "rationale": "Mock: action coverage 0%."
+        },
+        "subscore": 0.425
+      },
+      "composite": 0.2654
+    },
+    "negative_scores": [
+      {
+        "id": "neg_holdout_015a",
+        "failure_mode": "ignores_intent",
+        "composite": 0.2615
+      },
+      {
+        "id": "neg_holdout_015b",
+        "failure_mode": "missing_actions",
+        "composite": 0.2592
+      }
+    ],
+    "beats_all_negatives": true,
+    "retrieved_examples": [
+      "var_seed_016_31",
+      "var_seed_017_33",
+      "seed_017"
+    ]
+  }
+]

@@ -1,0 +1,339 @@
+{
+  "passed": true,
+  "mean_composite": 0.15,
+  "threshold_per_pair": 0.25,
+  "threshold_mean": 0.15,
+  "failures": [],
+  "results": [
+    {
+      "id": "sanity_001",
+      "source_categories": {
+        "email": "billing",
+        "reply": "account_access"
+      },
+      "why_mismatched": "Reply addresses password reset, not billing dispute.",
+      "scores": {
+        "semantic_similarity": 1.0,
+        "similarity_zone": "high",
+        "action_coverage": 1.0,
+        "judge": {
+          "intent_alignment": {
+            "score": 1,
+            "rationale": "Reply does not address the email topic."
+          },
+          "tone_consistency": {
+            "score": 2,
+            "rationale": "Tone may be fine but content is irrelevant."
+          },
+          "hallucination": {
+            "score": 1,
+            "rationale": "Content is completely unrelated to request."
+          },
+          "completeness": {
+            "score": 1,
+            "rationale": "No relevant actions or answers provided."
+          },
+          "subscore": 0.05
+        },
+        "composite": 0.15
+      }
+    },
+    {
+      "id": "sanity_002",
+      "source_categories": {
+        "email": "scheduling",
+        "reply": "billing"
+      },
+      "why_mismatched": "Reply confirms a refund instead of rescheduling a meeting.",
+      "scores": {
+        "semantic_similarity": 1.0,
+        "similarity_zone": "high",
+        "action_coverage": 1.0,
+        "judge": {
+          "intent_alignment": {
+            "score": 1,
+            "rationale": "Reply does not address the email topic."
+          },
+          "tone_consistency": {
+            "score": 2,
+            "rationale": "Tone may be fine but content is irrelevant."
+          },
+          "hallucination": {
+            "score": 1,
+            "rationale": "Content is completely unrelated to request."
+          },
+          "completeness": {
+            "score": 1,
+            "rationale": "No relevant actions or answers provided."
+          },
+          "subscore": 0.05
+        },
+        "composite": 0.15
+      }
+    },
+    {
+      "id": "sanity_003",
+      "source_categories": {
+        "email": "sales",
+        "reply": "complaints"
+      },
+      "why_mismatched": "Reply apologizes for shipping delay instead of answering pricing.",
+      "scores": {
+        "semantic_similarity": 1.0,
+        "similarity_zone": "high",
+        "action_coverage": 1.0,
+        "judge": {
+          "intent_alignment": {
+            "score": 1,
+            "rationale": "Reply does not address the email topic."
+          },
+          "tone_consistency": {
+            "score": 2,
+            "rationale": "Tone may be fine but content is irrelevant."
+          },
+          "hallucination": {
+            "score": 1,
+            "rationale": "Content is completely unrelated to request."
+          },
+          "completeness": {
+            "score": 1,
+            "rationale": "No relevant actions or answers provided."
+          },
+          "subscore": 0.05
+        },
+        "composite": 0.15
+      }
+    },
+    {
+      "id": "sanity_004",
+      "source_categories": {
+        "email": "support",
+        "reply": "billing"
+      },
+      "why_mismatched": "Reply discusses subscription cancellation, not a technical bug.",
+      "scores": {
+        "semantic_similarity": 1.0,
+        "similarity_zone": "high",
+        "action_coverage": 1.0,
+        "judge": {
+          "intent_alignment": {
+            "score": 1,
+            "rationale": "Reply does not address the email topic."
+          },
+          "tone_consistency": {
+            "score": 2,
+            "rationale": "Tone may be fine but content is irrelevant."
+          },
+          "hallucination": {
+            "score": 1,
+            "rationale": "Content is completely unrelated to request."
+          },
+          "completeness": {
+            "score": 1,
+            "rationale": "No relevant actions or answers provided."
+          },
+          "subscore": 0.05
+        },
+        "composite": 0.15
+      }
+    },
+    {
+      "id": "sanity_005",
+      "source_categories": {
+        "email": "complaints",
+        "reply": "sales"
+      },
+      "why_mismatched": "Reply provides sales pricing instead of addressing shipping.",
+      "scores": {
+        "semantic_similarity": 1.0,
+        "similarity_zone": "high",
+        "action_coverage": 1.0,
+        "judge": {
+          "intent_alignment": {
+            "score": 1,
+            "rationale": "Reply does not address the email topic."
+          },
+          "tone_consistency": {
+            "score": 2,
+            "rationale": "Tone may be fine but content is irrelevant."
+          },
+          "hallucination": {
+            "score": 1,
+            "rationale": "Content is completely unrelated to request."
+          },
+          "completeness": {
+            "score": 1,
+            "rationale": "No relevant actions or answers provided."
+          },
+          "subscore": 0.05
+        },
+        "composite": 0.15
+      }
+    },
+    {
+      "id": "sanity_006",
+      "source_categories": {
+        "email": "account_access",
+        "reply": "feature_request"
+      },
+      "why_mismatched": "Reply discusses feature roadmap instead of account unlock.",
+      "scores": {
+        "semantic_similarity": 1.0,
+        "similarity_zone": "high",
+        "action_coverage": 1.0,
+        "judge": {
+          "intent_alignment": {
+            "score": 1,
+            "rationale": "Reply does not address the email topic."
+          },
+          "tone_consistency": {
+            "score": 2,
+            "rationale": "Tone may be fine but content is irrelevant."
+          },
+          "hallucination": {
+            "score": 1,
+            "rationale": "Content is completely unrelated to request."
+          },
+          "completeness": {
+            "score": 1,
+            "rationale": "No relevant actions or answers provided."
+          },
+          "subscore": 0.05
+        },
+        "composite": 0.15
+      }
+    },
+    {
+      "id": "sanity_007",
+      "source_categories": {
+        "email": "feature_request",
+        "reply": "account_access"
+      },
+      "why_mismatched": "Reply unlocks account instead of addressing feature request.",
+      "scores": {
+        "semantic_similarity": 1.0,
+        "similarity_zone": "high",
+        "action_coverage": 1.0,
+        "judge": {
+          "intent_alignment": {
+            "score": 1,
+            "rationale": "Reply does not address the email topic."
+          },
+          "tone_consistency": {
+            "score": 2,
+            "rationale": "Tone may be fine but content is irrelevant."
+          },
+          "hallucination": {
+            "score": 1,
+            "rationale": "Content is completely unrelated to request."
+          },
+          "completeness": {
+            "score": 1,
+            "rationale": "No relevant actions or answers provided."
+          },
+          "subscore": 0.05
+        },
+        "composite": 0.15
+      }
+    },
+    {
+      "id": "sanity_008",
+      "source_categories": {
+        "email": "scheduling",
+        "reply": "support"
+      },
+      "why_mismatched": "Reply recommends software update instead of cancelling meeting.",
+      "scores": {
+        "semantic_similarity": 1.0,
+        "similarity_zone": "high",
+        "action_coverage": 1.0,
+        "judge": {
+          "intent_alignment": {
+            "score": 1,
+            "rationale": "Reply does not address the email topic."
+          },
+          "tone_consistency": {
+            "score": 2,
+            "rationale": "Tone may be fine but content is irrelevant."
+          },
+          "hallucination": {
+            "score": 1,
+            "rationale": "Content is completely unrelated to request."
+          },
+          "completeness": {
+            "score": 1,
+            "rationale": "No relevant actions or answers provided."
+          },
+          "subscore": 0.05
+        },
+        "composite": 0.15
+      }
+    },
+    {
+      "id": "sanity_009",
+      "source_categories": {
+        "email": "support",
+        "reply": "sales"
+      },
+      "why_mismatched": "Reply discusses nonprofit discount instead of integration fix.",
+      "scores": {
+        "semantic_similarity": 1.0,
+        "similarity_zone": "high",
+        "action_coverage": 1.0,
+        "judge": {
+          "intent_alignment": {
+            "score": 1,
+            "rationale": "Reply does not address the email topic."
+          },
+          "tone_consistency": {
+            "score": 2,
+            "rationale": "Tone may be fine but content is irrelevant."
+          },
+          "hallucination": {
+            "score": 1,
+            "rationale": "Content is completely unrelated to request."
+          },
+          "completeness": {
+            "score": 1,
+            "rationale": "No relevant actions or answers provided."
+          },
+          "subscore": 0.05
+        },
+        "composite": 0.15
+      }
+    },
+    {
+      "id": "sanity_010",
+      "source_categories": {
+        "email": "onboarding",
+        "reply": "complaints"
+      },
+      "why_mismatched": "Reply escalates billing dispute instead of resending welcome email.",
+      "scores": {
+        "semantic_similarity": 1.0,
+        "similarity_zone": "high",
+        "action_coverage": 1.0,
+        "judge": {
+          "intent_alignment": {
+            "score": 1,
+            "rationale": "Reply does not address the email topic."
+          },
+          "tone_consistency": {
+            "score": 2,
+            "rationale": "Tone may be fine but content is irrelevant."
+          },
+          "hallucination": {
+            "score": 1,
+            "rationale": "Content is completely unrelated to request."
+          },
+          "completeness": {
+            "score": 1,
+            "rationale": "No relevant actions or answers provided."
+          },
+          "subscore": 0.05
+        },
+        "composite": 0.15
+      }
+    }
+  ]
+}
